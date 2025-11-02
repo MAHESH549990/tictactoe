@@ -1,0 +1,114 @@
+/* === General Styling === */
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #a0e9ff, #a9ffcb);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h1 {
+  font-size: 6vmin;
+  color: #4b0082;
+  margin-top: 2rem;
+  text-shadow: 2px 2px #ffffffa5;
+}
+
+/* === Game Container === */
+.box {
+  height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8vmin;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 2vmin;
+}
+
+/* === Game Buttons === */
+.boxs {
+  color: black;
+  background: linear-gradient(145deg, #ff914d, #ff5e00);
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  font-size: 12vmin;
+  font-weight: bold;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+
+.boxs:hover:not(:disabled) {
+  transform: scale(1.05);
+  background: linear-gradient(145deg, #ffb27f, #ff7300);
+  cursor: pointer;
+}
+
+/* Disabled box style after win */
+.boxs:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* === Buttons (Reset + New Game) === */
+#reset,
+#new-bu {
+  background: linear-gradient(135deg, #8a2be2, #6a0dad);
+  color: white;
+  font-size: 2.5vmin;
+  font-weight: bold;
+  text-align: center;
+  width: 20vmin;
+  height: 6vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  margin: 1rem;
+}
+
+#reset:hover,
+#new-bu:hover {
+  background: linear-gradient(135deg, #b269ff, #8a2be2);
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+
+/* === Message Area === */
+.msg-con {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#msg {
+  color: #4b0082;
+  font-size: 4vmin;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* === Hidden State === */
+.hide {
+  display: none;
+}
